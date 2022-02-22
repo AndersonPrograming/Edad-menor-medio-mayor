@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="estilos.css">
+     <title>Edades</title>
+</head>
+
+<body>
+     <div class="contenedor">
+          <h1>Calcular Edad</h1>
+          <div id="error" class="error"></div>
+          <input type="number" id="edad1" placeholder="ingresa la edad numero 1"><br>
+          <input type="number" id="edad2" placeholder="ingresa la edad numero 2"><br>
+          <input type="number" id="edad3" placeholder="ingresa la edad numero 3"><br>
+
+          <input type="button" value="Calcular" onclick="mostrar()">
+          <input type="button" value="resetear" id="reset" onclick="vaciar()">
+          <div class="resultado">
+               <span id="edadMenor"></span><br>
+               <span id="edadMedio"></span><br>
+               <span id="edadMayor"></span><br>
+          </div>
+     </div>
+     <div class="msg">
+          <p>Este programa recibe tres edades y calcula cual es la menor, la del medio y la mayor.</p>
+     </div>
+
+
+     <script src="mostrar.js"></script>
+</body>
+
+</html>
